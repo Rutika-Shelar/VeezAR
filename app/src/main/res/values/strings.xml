@@ -7,9 +7,17 @@
     <string name="no_internet_connection">No internet connection!</string>
     <string name="lbl_email">Email</string>
     <string name="msg_already_have_an">Already have an account? Log in</string>
-    <string name="msg_or_connect_with">Or connect with social media</string>
+    <string name="msg_or_connect_with">Or connect with </string>
     <string name="msg_continue_with_email">Continue with Email</string>
     <string name="msg_travel_to_anywhere">Travel to Anywhere with Us</string>
     <string name="msg_by_signing_up_you">By signing up, you agree to our Terms of Service and Privacy Policy.</string>
     <string name="lbl_password">Password</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="new_account">New Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_nu">Mobile Number</string>
+
+
+
 </resources>

@@ -12,9 +12,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.veezar.R
+import com.example.veezar.componentsimport.ButtonComponent
 import com.example.veezar.componentsimport.HeadingTextComposable
 import com.example.veezar.componentsimport.MyTextFieldComponent
-import com.example.veezar.componentsimport.NormalTextComposable
 
 @Composable
 fun SignUpScreen() {
@@ -26,9 +26,13 @@ fun SignUpScreen() {
             .padding(28.dp)
     ) {
         Column (modifier=Modifier.fillMaxSize()){
-            NormalTextComposable(value = stringResource(id = R.string.Travel))
-            HeadingTextComposable(value = stringResource(id = R.string.creat))
-            MyTextFieldComponent("Password")
+            HeadingTextComposable(value = stringResource(id = R.string.new_account))
+            MyTextFieldComponent(value = stringResource(id = R.string.full_name))
+            MyTextFieldComponent(value = stringResource(id = R.string.mobile_nu))
+            MyTextFieldComponent(value = stringResource(id = R.string.lbl_email))
+            MyTextFieldComponent(value = stringResource(id = R.string.lbl_password))
+            MyTextFieldComponent(value = stringResource(id = R.string.full_name))
+            ButtonComponent(value = stringResource(id = R.string.sign_up))
         }
     }
 }
