@@ -2,7 +2,6 @@ package com.example.veezar.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,10 +19,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.veezar.R
-import com.example.veezar.componentsimport.ButtonComponent
-import com.example.veezar.componentsimport.MyTextFieldComponent
-import com.example.veezar.componentsimport.NormalTextComposable
-import com.example.veezar.componentsimport.SmallTextComposable
+import com.example.veezar.components.ButtonComponent
+import com.example.veezar.components.MyTextFieldComponent
+import com.example.veezar.components.NormalTextComposable
+import com.example.veezar.components.SmallTextComposable
 
 @Composable
 fun LoginScreen(){
@@ -37,7 +36,7 @@ fun LoginScreen(){
         Column(
             modifier = Modifier
                 .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally  // Center horizontally
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
                 painter = painterResource(id = R.drawable.wallpaper),
@@ -47,14 +46,15 @@ fun LoginScreen(){
                     .height(320.dp),
                 contentScale = ContentScale.Crop
             )
-            Spacer(modifier = Modifier.height(10.dp))
 
-            NormalTextComposable(value = stringResource(id = R.string.Travel))
+            Spacer(modifier = Modifier.height(10.dp))
+            NormalTextComposable(value = stringResource(id = R.string.Travel_any_where))
             MyTextFieldComponent(value = stringResource(id = R.string.lbl_email))
             Spacer(modifier = Modifier.height(16.dp))
             MyTextFieldComponent(value= stringResource(id = R.string.lbl_password))
             ButtonComponent(value = stringResource(id = R.string.msg_continue_with_email))
             SmallTextComposable(value = stringResource(id = R.string.msg_already_have_an))
+            Spacer(modifier = Modifier.height(50.dp))
             SmallTextComposable(value = stringResource(id = R.string.msg_or_connect_with))
             Image(
                 painter = painterResource(id = R.drawable.google),

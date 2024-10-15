@@ -10,6 +10,8 @@
     <color name="blue_gray_50">#e8edf2</color>
     <color name="blue_gray_500">#4f7296</color>
     <color name="gray_900">#0c141c</color>
-    <color name="blue_600">#197fe5</color>
+    <color name="blue_600">#173049</color>
     <color name="gray_50">#f7f9fc</color>
+    <color name="blue">#4D7D99</color>
+
 </resources>
